@@ -6,5 +6,17 @@ class CookBook
 
   def add_recipe(recipe)
     @recipes << recipe
-  end 
+  end
+
+  def ingredients
+    @recipes.map do |recipe|
+      array = []
+      recipe.ingredients.each do |ingredient|
+        array << ingredient.name
+      end
+      array
+    end.flatten.uniq
+  end
 end
+
+# require 'pry'; binding.pry
