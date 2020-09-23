@@ -16,7 +16,7 @@ class Recipe
   def ingredients_by_name
     ingredients.map do |ingredient|
       ingredient.name
-    end 
+    end
   end
 
   def total_calories
@@ -25,6 +25,3 @@ class Recipe
     end
   end
 end
-
-
-# require 'pry'; binding.pry

@@ -10,14 +10,9 @@ class CookBook
 
   def ingredients
     @recipes.map do |recipe|
-      array = []
-      recipe.ingredients.each do |ingredient|
-        array << ingredient.name
-      end
-      array
+      recipe.ingredients_by_name
     end.flatten.uniq
   end
-  # ^^need to refactor if time^^
 
   def highest_calorie_meal
     @recipes.max do |recipe|
