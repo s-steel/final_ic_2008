@@ -12,6 +12,7 @@ class CookBookTest < Minitest::Test
 
     assert_instance_of CookBook, cookbook
     assert_equal [], cookbook.recipes
+    assert_equal "09-23-2020", cookbook.date
   end
 
   def test_add_recipe
@@ -63,5 +64,5 @@ class CookBookTest < Minitest::Test
     cookbook.add_recipe(recipe2)
 
     assert_equal recipe2, cookbook.highest_calorie_meal
-  end 
+  end
 end
