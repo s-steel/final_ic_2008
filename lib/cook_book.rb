@@ -17,12 +17,12 @@ class CookBook
       array
     end.flatten.uniq
   end
-  # ^^need to refactor is time^^
+  # ^^need to refactor if time^^
 
   def highest_calorie_meal
     @recipes.max do |recipe|
       recipe.total_calories
-    end 
+    end
   end
 end
 
