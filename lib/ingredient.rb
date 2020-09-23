@@ -5,5 +5,4 @@ class Ingredient
     @unit = data[:unit]
     @calories = data[:calories]
   end
-
-end 
+end
