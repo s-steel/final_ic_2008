@@ -17,6 +17,7 @@ class CookBook
       array
     end.flatten.uniq
   end
+  # ^^need to refactor is time^^
 end
 
 # require 'pry'; binding.pry
