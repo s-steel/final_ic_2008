@@ -12,4 +12,13 @@ class Recipe
   def ingredients
     @ingredients_required.keys
   end
+
+  def total_calories
+    @ingredients_required.sum do |ingredient, quantity|
+      ingredient.calories * quantity
+    end 
+  end
 end
+
+
+# require 'pry'; binding.pry
