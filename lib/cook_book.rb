@@ -18,6 +18,12 @@ class CookBook
     end.flatten.uniq
   end
   # ^^need to refactor is time^^
+
+  def highest_calorie_meal
+    @recipes.max do |recipe|
+      recipe.total_calories
+    end 
+  end
 end
 
 # require 'pry'; binding.pry
